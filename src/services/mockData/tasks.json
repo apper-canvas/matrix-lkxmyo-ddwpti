@@ -1,0 +1,68 @@
+[
+  {
+    "Id": 1,
+    "farmId": 1,
+    "cropId": 1,
+    "title": "Water tomato beds",
+    "description": "Deep watering for tomato plants in section A",
+    "dueDate": "2024-04-20T08:00:00Z",
+    "priority": "High",
+    "status": "Pending",
+    "completedAt": null
+  },
+  {
+    "Id": 2,
+    "farmId": 1,
+    "cropId": 2,
+    "title": "Apply fertilizer to corn",
+    "description": "Apply nitrogen-rich fertilizer to corn field",
+    "dueDate": "2024-04-21T10:00:00Z",
+    "priority": "Medium",
+    "status": "Pending",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "farmId": 2,
+    "cropId": 3,
+    "title": "Harvest lettuce",
+    "description": "Harvest mature romaine lettuce from greenhouse",
+    "dueDate": "2024-04-19T06:00:00Z",
+    "priority": "High",
+    "status": "Completed",
+    "completedAt": "2024-04-19T06:30:00Z"
+  },
+  {
+    "Id": 4,
+    "farmId": 2,
+    "cropId": 4,
+    "title": "Weed carrot rows",
+    "description": "Remove weeds between carrot rows manually",
+    "dueDate": "2024-04-22T09:00:00Z",
+    "priority": "Medium",
+    "status": "Pending",
+    "completedAt": null
+  },
+  {
+    "Id": 5,
+    "farmId": 3,
+    "cropId": 5,
+    "title": "Inspect grape vines",
+    "description": "Check grape vines for pests and diseases",
+    "dueDate": "2024-04-20T15:00:00Z",
+    "priority": "High",
+    "status": "In Progress",
+    "completedAt": null
+  },
+  {
+    "Id": 6,
+    "farmId": 1,
+    "cropId": null,
+    "title": "Repair irrigation system",
+    "description": "Fix broken sprinkler head in zone 3",
+    "dueDate": "2024-04-23T14:00:00Z",
+    "priority": "High",
+    "status": "Pending",
+    "completedAt": null
+  }
+]

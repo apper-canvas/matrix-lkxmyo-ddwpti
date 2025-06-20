@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "farmId": 1,
+    "name": "Tomatoes",
+    "variety": "Roma",
+    "plantedDate": "2024-03-15T00:00:00Z",
+    "expectedHarvest": "2024-06-15T00:00:00Z",
+    "areaPlanted": 2.5,
+    "growthStage": "Flowering",
+    "status": "Active"
+  },
+  {
+    "Id": 2,
+    "farmId": 1,
+    "name": "Corn",
+    "variety": "Sweet Corn",
+    "plantedDate": "2024-04-01T00:00:00Z",
+    "expectedHarvest": "2024-07-15T00:00:00Z",
+    "areaPlanted": 5.0,
+    "growthStage": "Vegetative",
+    "status": "Active"
+  },
+  {
+    "Id": 3,
+    "farmId": 2,
+    "name": "Lettuce",
+    "variety": "Romaine",
+    "plantedDate": "2024-03-20T00:00:00Z",
+    "expectedHarvest": "2024-05-20T00:00:00Z",
+    "areaPlanted": 1.2,
+    "growthStage": "Mature",
+    "status": "Active"
+  },
+  {
+    "Id": 4,
+    "farmId": 2,
+    "name": "Carrots",
+    "variety": "Nantes",
+    "plantedDate": "2024-02-28T00:00:00Z",
+    "expectedHarvest": "2024-05-30T00:00:00Z",
+    "areaPlanted": 0.8,
+    "growthStage": "Root Development",
+    "status": "Active"
+  },
+  {
+    "Id": 5,
+    "farmId": 3,
+    "name": "Grapes",
+    "variety": "Cabernet Sauvignon",
+    "plantedDate": "2023-04-10T00:00:00Z",
+    "expectedHarvest": "2024-09-15T00:00:00Z",
+    "areaPlanted": 12.0,
+    "growthStage": "Fruit Development",
+    "status": "Active"
+  }
+]

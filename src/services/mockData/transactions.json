@@ -1,0 +1,65 @@
+[
+  {
+    "Id": 1,
+    "farmId": 1,
+    "type": "Expense",
+    "category": "Seeds",
+    "amount": 245.50,
+    "description": "Tomato and corn seeds for spring planting",
+    "date": "2024-03-15T00:00:00Z"
+  },
+  {
+    "Id": 2,
+    "farmId": 1,
+    "type": "Income",
+    "category": "Produce Sales",
+    "amount": 1250.00,
+    "description": "Sold winter vegetables to local market",
+    "date": "2024-03-20T00:00:00Z"
+  },
+  {
+    "Id": 3,
+    "farmId": 2,
+    "type": "Expense",
+    "category": "Fertilizer",
+    "amount": 180.75,
+    "description": "Organic fertilizer for lettuce and carrots",
+    "date": "2024-03-22T00:00:00Z"
+  },
+  {
+    "Id": 4,
+    "farmId": 2,
+    "type": "Income",
+    "category": "Produce Sales",
+    "amount": 890.00,
+    "description": "Weekly delivery to restaurants",
+    "date": "2024-04-01T00:00:00Z"
+  },
+  {
+    "Id": 5,
+    "farmId": 3,
+    "type": "Expense",
+    "category": "Equipment",
+    "amount": 450.00,
+    "description": "Pruning shears and vineyard tools",
+    "date": "2024-04-05T00:00:00Z"
+  },
+  {
+    "Id": 6,
+    "farmId": 1,
+    "type": "Expense",
+    "category": "Utilities",
+    "amount": 125.30,
+    "description": "Irrigation system electricity bill",
+    "date": "2024-04-10T00:00:00Z"
+  },
+  {
+    "Id": 7,
+    "farmId": 3,
+    "type": "Income",
+    "category": "Wine Sales",
+    "amount": 2400.00,
+    "description": "Bottled wine sales to distributors",
+    "date": "2024-04-12T00:00:00Z"
+  }
+]

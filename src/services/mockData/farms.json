@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 1,
+    "name": "Springfield Farm",
+    "location": "Springfield Valley, CA",
+    "totalArea": 25.5,
+    "areaUnit": "acres",
+    "createdAt": "2024-01-15T08:00:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Green Meadows",
+    "location": "Riverside County, CA",
+    "totalArea": 18.2,
+    "areaUnit": "acres",
+    "createdAt": "2024-02-10T10:30:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Sunset Ranch",
+    "location": "Napa Valley, CA",
+    "totalArea": 42.8,
+    "areaUnit": "acres",
+    "createdAt": "2024-01-22T14:15:00Z"
+  },
+  {
+    "Id": 4,
+    "name": "Valley View Farm",
+    "location": "Central Valley, CA",
+    "totalArea": 35.0,
+    "areaUnit": "acres",
+    "createdAt": "2024-03-05T09:45:00Z"
+  }
+]
