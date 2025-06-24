@@ -20,7 +20,7 @@ const Farms = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [editingFarm, setEditingFarm] = useState(null);
 
-  const farmFields = [
+const farmFields = [
     {
       name: 'name',
       label: 'Farm Name',

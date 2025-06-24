@@ -27,7 +27,7 @@ const Crops = () => {
     growthStage: ''
   });
 
-  const cropFields = [
+const cropFields = [
     {
       name: 'farmId',
       label: 'Farm',
@@ -51,7 +51,7 @@ const Crops = () => {
       placeholder: 'e.g., Roma, Sweet Corn, Romaine',
       icon: 'Leaf'
     },
-{
+    {
       name: 'plantedDate',
       label: 'Planted Date',
       type: 'datepicker',

@@ -29,7 +29,7 @@ const Finances = () => {
     category: ''
   });
 
-  const transactionFields = [
+const transactionFields = [
     {
       name: 'farmId',
       label: 'Farm',
@@ -80,7 +80,7 @@ const Finances = () => {
       placeholder: 'Brief description of the transaction',
       icon: 'FileText'
     },
-{
+    {
       name: 'date',
       label: 'Date',
       type: 'datepicker',

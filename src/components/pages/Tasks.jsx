@@ -30,7 +30,7 @@ const Tasks = () => {
     priority: ''
   });
 
-  const taskFields = [
+const taskFields = [
     {
       name: 'farmId',
       label: 'Farm',
@@ -53,7 +53,7 @@ const Tasks = () => {
       placeholder: 'e.g., Water tomato beds, Apply fertilizer',
       icon: 'CheckSquare'
     },
-{
+    {
       name: 'description',
       label: 'Description',
       type: 'textarea',
