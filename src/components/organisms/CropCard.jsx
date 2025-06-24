@@ -15,13 +15,15 @@ const CropCard = ({
   onUpdateStatus,
   className = '' 
 }) => {
-  const [loading, setLoading] = useState(false);
+const [loading, setLoading] = useState(false);
 
-  const plantedDate = new Date(crop.plantedDate);
-  const expectedHarvest = new Date(crop.expectedHarvest);
-  const daysToHarvest = differenceInDays(expectedHarvest, new Date());
-  const daysSincePlanted = differenceInDays(new Date(), plantedDate);
-
+  // Use database field names and add validation
+  const plantedDate = crop.planted_date ? new Date(crop.planted_date) : null;
+  const expectedHarvest = crop.expected_harvest ? new Date(crop.expected_harvest) : null;
+  
+  // Only calculate if dates are valid
+  const daysToHarvest = expectedHarvest && !isNaN(expectedHarvest) ? differenceInDays(expectedHarvest, new Date()) : null;
+  const daysSincePlanted = plantedDate && !isNaN(plantedDate) ? differenceInDays(new Date(), plantedDate) : null;
   const getGrowthStageInfo = (stage) => {
     const stages = {
       'Seedling': { progress: 20, color: 'info', icon: 'Sprout' },
@@ -126,11 +128,11 @@ const CropCard = ({
             <ApperIcon name="Calendar" size={14} className="text-gray-400" />
             <span className="text-gray-600">Planted</span>
           </div>
-          <p className="text-sm font-medium">
-            {format(plantedDate, 'MMM dd, yyyy')}
+<p className="text-sm font-medium">
+            {plantedDate && !isNaN(plantedDate) ? format(plantedDate, 'MMM dd, yyyy') : 'Invalid date'}
           </p>
           <p className="text-xs text-gray-500">
-            {daysSincePlanted} days ago
+            {daysSincePlanted !== null ? `${daysSincePlanted} days ago` : 'N/A'}
           </p>
         </div>
         
@@ -139,15 +141,17 @@ const CropCard = ({
             <ApperIcon name="Clock" size={14} className="text-gray-400" />
             <span className="text-gray-600">Harvest</span>
           </div>
-          <p className="text-sm font-medium">
-            {format(expectedHarvest, 'MMM dd, yyyy')}
+<p className="text-sm font-medium">
+            {expectedHarvest && !isNaN(expectedHarvest) ? format(expectedHarvest, 'MMM dd, yyyy') : 'Invalid date'}
           </p>
-          <p className={`text-xs ${daysToHarvest < 0 ? 'text-error' : daysToHarvest < 7 ? 'text-warning' : 'text-gray-500'}`}>
-            {daysToHarvest < 0 
-              ? `${Math.abs(daysToHarvest)} days overdue`
-              : daysToHarvest === 0
-              ? 'Due today'
-              : `${daysToHarvest} days left`
+          <p className={`text-xs ${daysToHarvest !== null && daysToHarvest < 0 ? 'text-error' : daysToHarvest !== null && daysToHarvest < 7 ? 'text-warning' : 'text-gray-500'}`}>
+            {daysToHarvest !== null
+              ? daysToHarvest < 0 
+                ? `${Math.abs(daysToHarvest)} days overdue`
+                : daysToHarvest === 0
+                ? 'Due today'
+                : `${daysToHarvest} days left`
+              : 'N/A'
             }
           </p>
         </div>
