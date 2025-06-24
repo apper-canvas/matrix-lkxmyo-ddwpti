@@ -53,13 +53,12 @@ const Tasks = () => {
       placeholder: 'e.g., Water tomato beds, Apply fertilizer',
       icon: 'CheckSquare'
     },
-    {
+{
       name: 'description',
       label: 'Description',
       type: 'textarea',
       required: false,
       placeholder: 'Additional details about the task...'
-placeholder: 'Additional details about the task...'
     },
     {
       name: 'dueDate',
@@ -79,6 +78,7 @@ placeholder: 'Additional details about the task...'
         { value: 'Low', label: 'Low Priority' }
       ]
     },
+    {
       name: 'status',
       label: 'Status',
       type: 'select',
