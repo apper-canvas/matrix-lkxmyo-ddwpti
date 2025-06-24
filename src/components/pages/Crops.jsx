@@ -51,19 +51,17 @@ const Crops = () => {
       placeholder: 'e.g., Roma, Sweet Corn, Romaine',
       icon: 'Leaf'
     },
-    {
+{
       name: 'plantedDate',
       label: 'Planted Date',
-      type: 'text',
-      inputType: 'date',
+      type: 'datepicker',
       required: true,
       icon: 'Calendar'
     },
     {
       name: 'expectedHarvest',
       label: 'Expected Harvest Date',
-      type: 'text',
-      inputType: 'date',
+      type: 'datepicker',
       required: true,
       icon: 'Clock'
     },

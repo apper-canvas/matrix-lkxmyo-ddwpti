@@ -6,6 +6,10 @@ const FormField = ({ type = 'input', ...props }) => {
     return <Select {...props} />;
   }
   
+  if (type === 'datepicker') {
+    return <Input type="datepicker" {...props} />;
+  }
+  
   return <Input {...props} />;
 };
 

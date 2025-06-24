@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
-import taskService from '@/services/api/taskService';
-import farmService from '@/services/api/farmService';
-import cropService from '@/services/api/cropService';
-import TaskCard from '@/components/organisms/TaskCard';
-import AddEditModal from '@/components/organisms/AddEditModal';
-import SkeletonLoader from '@/components/molecules/SkeletonLoader';
-import ErrorState from '@/components/molecules/ErrorState';
-import EmptyState from '@/components/molecules/EmptyState';
-import Button from '@/components/atoms/Button';
-import Select from '@/components/atoms/Select';
-import Badge from '@/components/atoms/Badge';
-import ApperIcon from '@/components/ApperIcon';
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import farmService from "@/services/api/farmService";
+import cropService from "@/services/api/cropService";
+import taskService from "@/services/api/taskService";
+import ApperIcon from "@/components/ApperIcon";
+import SkeletonLoader from "@/components/molecules/SkeletonLoader";
+import EmptyState from "@/components/molecules/EmptyState";
+import ErrorState from "@/components/molecules/ErrorState";
+import TaskCard from "@/components/organisms/TaskCard";
+import AddEditModal from "@/components/organisms/AddEditModal";
+import Badge from "@/components/atoms/Badge";
+import Select from "@/components/atoms/Select";
+import Button from "@/components/atoms/Button";
 
 const Tasks = () => {
   const [tasks, setTasks] = useState([]);
@@ -59,12 +59,12 @@ const Tasks = () => {
       type: 'textarea',
       required: false,
       placeholder: 'Additional details about the task...'
+placeholder: 'Additional details about the task...'
     },
     {
       name: 'dueDate',
       label: 'Due Date',
-      type: 'text',
-      inputType: 'datetime-local',
+      type: 'datepicker',
       required: true,
       icon: 'Calendar'
     },
@@ -79,7 +79,6 @@ const Tasks = () => {
         { value: 'Low', label: 'Low Priority' }
       ]
     },
-    {
       name: 'status',
       label: 'Status',
       type: 'select',

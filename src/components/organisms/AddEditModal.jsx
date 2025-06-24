@@ -101,10 +101,9 @@ const AddEditModal = ({
         </div>
       );
     }
-
-    return (
+return (
       <FormField
-        type={field.inputType || 'text'}
+        type={field.type === 'datepicker' ? 'datepicker' : (field.inputType || 'text')}
         icon={field.icon}
         {...commonProps}
       />

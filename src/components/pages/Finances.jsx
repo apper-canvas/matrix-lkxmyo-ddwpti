@@ -80,11 +80,10 @@ const Finances = () => {
       placeholder: 'Brief description of the transaction',
       icon: 'FileText'
     },
-    {
+{
       name: 'date',
       label: 'Date',
-      type: 'text',
-      inputType: 'date',
+      type: 'datepicker',
       required: true,
       icon: 'Calendar'
     }
