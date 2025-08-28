@@ -16,7 +16,7 @@ const Layout = () => {
       href: '/', 
       current: window.location.pathname === '/' 
     },
-    ...routeArray.map(route => ({
+...routeArray.filter(route => route.id !== 'dashboard').map(route => ({
       ...route,
       href: route.path,
       current: window.location.pathname === route.path
