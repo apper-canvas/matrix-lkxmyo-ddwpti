@@ -52,9 +52,9 @@ const Layout = () => {
                     size={20}
                     className={`mr-3 flex-shrink-0 ${
                       item.current ? 'text-white' : 'text-gray-400 group-hover:text-gray-500'
-                    }`}
+}`}
                   />
-                  {item.title}
+                  {item.label}
                 </a>
               ))}
             </nav>
